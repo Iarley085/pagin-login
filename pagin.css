@@ -1,5 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body{
-    
+    font-family: 'Noto Sans', sans-serif;
     margin: 0;
 }
 .main-login{
@@ -9,6 +13,8 @@ body{
     display: flex;
     justify-content: center; /*justify-content organiza os elementos no eixo y*/
     align-items: center; /*align-items organiza os elementos no eixo x*/
+    gap: 50px;
+
 }
 .left-login{
     width: 50vw;
@@ -17,9 +23,14 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column; 
+   
 }
 .left-login > h1{
     color: #77ffc0;
+    
+}
+.animation1{
+    width: 35vw;
 }
 
 .reigth-login{
@@ -31,7 +42,7 @@ body{
 }
 
 .card-login {
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,6 +51,8 @@ body{
     background-color: #2f2841;
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
+    box-sizing: border-box;
+    
 }
 
 .card-login > h1 {
@@ -49,6 +62,7 @@ body{
 }
 
 .textfield{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -83,11 +97,15 @@ body{
 .btn-login{
     width: 100%;
     padding: 16px 0px ;
-    margin: 25px;
+    margin: 20px;
     border: none;
     border-radius: 8px;
     outline: none;
     text-transform: uppercase;
     font-weight: 800; /*deix a fonte mais grossa*/
-
+    letter-spacing: 2px;
+    color: #2b134b;
+    background:#00ff88 ;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px 12px #00ff8052;
 }
